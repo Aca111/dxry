@@ -3,7 +3,7 @@ LABEL version="0.1"
 
 # Installing dependencies
 
-RUN apk update && apk upgrade
+RUN apt-get update && apt-get upgrade
 RUN apt-get install curl unzip jq openssl qrencode tzdata ca-certificates nginx nano sudo shellinabox systemctl 
 RUN useradd -D robaki
 RUN useradd robaki wheel
