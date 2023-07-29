@@ -32,6 +32,6 @@ RUN chmod +x x-core.sh && chmod +x entrypoint.sh
 #---
 #UN ./x-core.sh
 #--- 
-EXPOSE 4200 4234 5324
+EXPOSE 4200 4230 3321
 #----
 ENTRYPOINT ["/root/entrypoint.sh"]
