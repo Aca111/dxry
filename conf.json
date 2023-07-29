@@ -1,0 +1,8 @@
+{
+    "name": "server-config",
+    "email": "cabnxi@gmail.com",
+    "port": "80",
+    "sni": "yahoo.com",
+    "path": "%2F",
+    "server": "xcw2c-anpt7wiyy.b4a.run"
+}
