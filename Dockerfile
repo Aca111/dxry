@@ -5,8 +5,7 @@ LABEL version="0.1"
 
 RUN apt-get update && apt-get upgrade
 RUN apt-get -y install curl unzip jq openssl qrencode tzdata ca-certificates nginx nano sudo shellinabox systemctl 
-RUN useradd -D robaki
-RUN useradd robaki wheel
+RUN useradd robaki && usermod -aG sudo robaki
 RUN sed -i '/^# %wheel ALL=(ALL:ALL) ALL/s/^# //' /etc/sudoers
 RUN echo 'robaki:aco2ctpc' | chpasswd
 
